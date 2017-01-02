@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+   <ion-item>
+      <ion-label stacked>Your Score</ion-label>
+      <ion-input type="number"min="0"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Opponent's Score</ion-label>
+      <ion-input type="number"min="0"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Possession (%)</ion-label>
+      <ion-input type="number"min="0"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Shots</ion-label>
+      <ion-input type="number"min="0"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Shots on Target</ion-label>
+      <ion-input type="number"min="0"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Competition</ion-label>
+      <ion-select [(ngModel)]="gaming">
+        <ion-option value="nes">Weekend League</ion-option>
+        <ion-option value="n64">Seasons</ion-option>
+        <ion-option value="ps">Friendly</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <br>
+
+    <ion-row>
+      <ion-col width-50 offset-25 style="text-align: center">
+        <button ion-button>Add Game</button>
+      </ion-col>
+    </ion-row>
+
+    
+</ion-content>
+
